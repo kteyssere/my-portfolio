@@ -21,14 +21,10 @@ export class SidenavComponent implements OnDestroy {
 
   openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
     this.dialog.open(MenuComponent, {
-      //width: '250px',
-      position: {
-        top: '10px',
-        right: '10px'
-      },
-      height: '100vh',
-      width: '100vw',
-      panelClass: 'full-screen-modal',
+      //width: '250px'
+      height: 'auto',
+      minWidth: '100%',
+      minHeight: '100vh',
       enterAnimationDuration,
       exitAnimationDuration,
     });

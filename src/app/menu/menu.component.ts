@@ -8,4 +8,5 @@ import {MatDialogRef} from "@angular/material/dialog";
 })
 export class MenuComponent {
   constructor(public dialogRef: MatDialogRef<MenuComponent>) {}
+
 }

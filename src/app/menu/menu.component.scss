@@ -1,0 +1,28 @@
+.close-dialog{
+  margin-top: 40px;
+  margin-right: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+a{
+  color: hsla(36, 95%, 85%, 1);
+  text-decoration: none;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cv-link{
+  top: 25%;
+}
+
+.project-link{
+  top: 50%;
+}
+
+.contact-link{
+  top: 75%;
+}
