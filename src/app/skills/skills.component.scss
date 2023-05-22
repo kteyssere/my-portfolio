@@ -1,0 +1,42 @@
+h1{
+  font-size: 35pt;
+  text-align:center;
+  padding-top: 5%;
+}
+
+h2{
+  font-size: 25pt;
+  margin-bottom: 5%;
+}
+
+a{
+  color: hsla(36, 95%, 85%, 1);
+  text-decoration: none;
+  display: block;
+  margin: auto;
+}
+
+img{
+  width: 8%;
+  height: 8%;
+}
+
+.container{
+  width: 25%;
+  height: 25%;
+  text-align:center;
+}
+
+.img-cont{
+  display: inline;
+  margin: 10% 2% 10% 2%;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: space-evenly;
+  padding: 2% 0% 2% 0%;
+}

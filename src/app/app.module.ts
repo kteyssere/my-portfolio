@@ -17,7 +17,8 @@ import {MatCardModule} from "@angular/material/card";
 import { HeaderComponent } from './header/header.component';
 import { ProjectCardsComponent } from './project-cards/project-cards.component';
 import { ContactComponent } from './contact/contact.component';
-import { ProgrammingLanguageComponent } from './programming-language/programming-language.component';
+import { SkillsComponent } from './skills/skills.component';
+import {MatTooltipModule} from "@angular/material/tooltip";
 
 @NgModule({
   declarations: [
@@ -27,21 +28,22 @@ import { ProgrammingLanguageComponent } from './programming-language/programming
     HeaderComponent,
     ProjectCardsComponent,
     ContactComponent,
-    ProgrammingLanguageComponent
+    SkillsComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        MatIconModule,
-        MatToolbarModule,
-        MatButtonModule,
-        MatSidenavModule,
-        MatListModule,
-        MatDialogModule,
-        NgOptimizedImage,
-        MatCardModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatListModule,
+    MatDialogModule,
+    NgOptimizedImage,
+    MatCardModule,
+    MatTooltipModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

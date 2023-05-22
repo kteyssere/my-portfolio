@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProgrammingLanguageComponent } from './programming-language.component';
+import { SkillsComponent } from './skills.component';
 
 describe('ProgrammingLanguageComponent', () => {
-  let component: ProgrammingLanguageComponent;
-  let fixture: ComponentFixture<ProgrammingLanguageComponent>;
+  let component: SkillsComponent;
+  let fixture: ComponentFixture<SkillsComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ProgrammingLanguageComponent]
+      declarations: [SkillsComponent]
     });
-    fixture = TestBed.createComponent(ProgrammingLanguageComponent);
+    fixture = TestBed.createComponent(SkillsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
