@@ -1,31 +1,49 @@
 <h1>Compétences</h1>
 
-<div class="row">
-  <div class="container">
-    <h2>langages de programmation</h2>
-    <div *ngFor="let langage of langages" class="img-cont">
-      <img [src]="langage.src" [alt]="langage.name" [matTooltip]="langage.name" matTooltipPosition="above"/>
+<div class="flex-container">
+  <div class="flex-child one">
+    <h2>Langages de programmation</h2>
+    <div class="img-cont">
+      <div fxFlex="7%"
+           fxFlex.xs="22%"
+           fxFlex.sm="12%" *ngFor="let langage of langages">
+        <img [src]="langage.src" [alt]="langage.name" [matTooltip]="langage.name" matTooltipPosition="above"/>
+      </div>
     </div>
   </div>
-  <div class="container">
-    <h2>frameworks</h2>
-    <div *ngFor="let framework of frameworks" class="img-cont">
-      <img [src]="framework.src" [alt]="framework.name" [matTooltip]="framework.name" matTooltipPosition="above"/>
+
+  <div class="flex-child two">
+    <h2>Frameworks</h2>
+    <div class="img-cont">
+      <div fxFlex="7%"
+           fxFlex.xs="22%"
+           fxFlex.sm="12%" *ngFor="let framework of frameworks">
+        <img [src]="framework.src" [alt]="framework.name" [matTooltip]="framework.name" matTooltipPosition="above"/>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="row">
-  <div class="container">
-    <h2>logiciels et outils</h2>
-    <div *ngFor="let logiciel of logiciels" class="img-cont">
-      <img [src]="logiciel.src" [alt]="logiciel.name" [matTooltip]="logiciel.name" matTooltipPosition="above"/>
+<div class="flex-container">
+  <div class="flex-child one">
+    <h2>Logiciels et outils</h2>
+    <div class="img-cont">
+      <div fxFlex="7%"
+           fxFlex.xs="22%"
+           fxFlex.sm="12%" *ngFor="let logiciel of logiciels">
+        <img [src]="logiciel.src" [alt]="logiciel.name" [matTooltip]="logiciel.name" matTooltipPosition="above"/>
+      </div>
     </div>
   </div>
-  <div class="container">
-    <h2>systhemes d'exploitation</h2>
-    <div *ngFor="let os of oss" class="img-cont" id="os">
-      <img [src]="os.src" [alt]="os.name" [matTooltip]="os.name" matTooltipPosition="above"/>
+
+  <div class="flex-child two">
+    <h2>Systhemes d'exploitation</h2>
+    <div class="img-cont">
+      <div fxFlex="7%"
+           fxFlex.xs="22%"
+           fxFlex.sm="12%" *ngFor="let os of oss">
+        <img [src]="os.src" [alt]="os.name" [matTooltip]="os.name" matTooltipPosition="above"/>
+      </div>
     </div>
   </div>
 </div>

@@ -19,6 +19,7 @@ import { ProjectCardsComponent } from './project-cards/project-cards.component';
 import { ContactComponent } from './contact/contact.component';
 import { SkillsComponent } from './skills/skills.component';
 import {MatTooltipModule} from "@angular/material/tooltip";
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import {MatTooltipModule} from "@angular/material/tooltip";
     MatDialogModule,
     NgOptimizedImage,
     MatCardModule,
-    MatTooltipModule
+    MatTooltipModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

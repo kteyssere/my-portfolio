@@ -1,12 +1,39 @@
 h1{
-  font-size: 35pt;
   text-align:center;
-  padding-top: 5%;
 }
 
 h2{
-  font-size: 25pt;
-  margin-bottom: 5%;
+  text-align:center;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  h1{
+    font-size: 35pt;
+    padding-top: 5%;
+  }
+  h2 {
+    font-size: 25pt;
+    margin-bottom: 2%;
+  }
+  .flex-container {
+    flex-flow: wrap;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  h1{
+    font-size: 25pt;
+    padding-top: 10%;
+  }
+  h2 {
+    font-size: 15pt;
+    margin-bottom: 4%;
+  }
+  .flex-container {
+    flex-flow: column;
+  }
 }
 
 a{
@@ -17,26 +44,24 @@ a{
 }
 
 img{
-  width: 8%;
-  height: 8%;
-}
-
-.container{
-  width: 25%;
-  height: 25%;
-  text-align:center;
+  width: 100%;
 }
 
 .img-cont{
-  display: inline;
-  margin: 10% 2% 10% 2%;
+  width: 50%;
+  margin: auto;
+  justify-content: center;
 }
 
-.row{
+.flex-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  align-content: space-evenly;
   padding: 2% 0% 2% 0%;
+}
+
+.flex-child {
+  flex: 1;
+}
+
+.ng-star-inserted{
+  margin-right: 1%;
 }
