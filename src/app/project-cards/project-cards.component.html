@@ -1,3 +1,31 @@
-<div>
-  <a mat-icon-button href="#contact"><mat-icon>keyboard_arrow_down</mat-icon></a>
+<h1>Projets</h1>
+
+<div class="flex-container">
+  <div class="flex-child one" fxFlex="25%"
+       fxFlex.xs="15%"
+       fxFlex.sm="35%" *ngFor="let project of projects">
+    <mat-card class="project-card">
+      <mat-card-header>
+        <mat-card-title>{{project.title}}</mat-card-title>
+        <mat-card-subtitle><span *ngIf="project.teammate" class="sp">Collaborateurs : <a class="teammate" [href]="project.teammate.link"> {{project.teammate.name}}</a></span></mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{project.content}}</p>
+        <mat-divider></mat-divider>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button *ngIf="project.link" (click)="openLink(project.link)" matTooltip="Open in new window" matTooltipPosition="above">
+          Repo git<mat-icon>open_in_new</mat-icon>
+        </button>
+        <button mat-button *ngIf="project.demoId" (click)="openDialog('1000ms', '1000ms', project.demoId)">
+          Démo
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
 </div>
+
+<a mat-icon-button href="#contact">
+  <mat-icon>keyboard_arrow_down</mat-icon>
+</a>
+

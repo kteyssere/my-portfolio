@@ -20,6 +20,8 @@ import { ContactComponent } from './contact/contact.component';
 import { SkillsComponent } from './skills/skills.component';
 import {MatTooltipModule} from "@angular/material/tooltip";
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { ProjectDemoComponent } from './project-demo/project-demo.component';
+import {YouTubePlayerModule} from "@angular/youtube-player";
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     HeaderComponent,
     ProjectCardsComponent,
     ContactComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProjectDemoComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +48,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     MatCardModule,
     MatTooltipModule,
     FlexLayoutModule,
+    YouTubePlayerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,40 @@
+/* If the screen size is 601px wide or more */
+@media screen and (min-width: 601px) {
+  div{
+    height: calc(100vh - 65px);
+  }
+  svg{
+    width:945px;
+    height:125px;
+  }
+  p {
+    font-size: 25pt;
+
+  }
+}
+/* If the screen size is 600px wide or less */
+@media screen and (max-width: 600px) {
+  div{
+    height: calc(100vh - 56px);
+  }
+  svg{
+    width: calc(945px / 3);
+    height:calc(125px / 3);
+  }
+  p {
+    font-size: calc(25pt / 2);
+
+  }
+}
+
+
 div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
   margin:0;
   width:100%;
-  height: calc(100vh - 65px);
   overflow:hidden;
   background: hsla(0, 4%, 5%, 1);
   text-align: center;
@@ -10,25 +43,176 @@ div{
 }
 
 a{
-  text-decoration: none;
+  flex: 1 0 auto;
+}
+
+a:before{
+  font-family: "Material Icons";
+  content: "keyboard_arrow_down";
   position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 2px;
+  left: 25px;
+  animation: arrow 5s infinite;
 }
-
-p{
+a:after{
+  font-family: "Material Icons";
+  content: "keyboard_arrow_down";
   position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 15px;
+  left: 25px;
+  animation: arrow 2.5s infinite;
 }
 
-.prenom-nom{
-  top: 40%;
-  font-size:35pt;
+mat-icon{
+  font-size: 50px;
+  height: 50px;
+  width: 50px;
+  margin-bottom: 10px;
+  animation: arrow 10s infinite;
 }
 
-.titre{
-  top: 50%;
-  font-size:25pt;
+.mat-mdc-icon-button.mat-mdc-button-base{
+  height: 20px;
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+p {
+  animation: fadeIn ease 5s;
+  flex: 5 0 auto;
+}
+
+/*Animations*/
+@keyframes lineanim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#animate {
+  flex: 10 0 auto;
+}
+#animate path:nth-child(2) {
+  stroke-dasharray: 477px;
+  stroke-dashoffset: 477px;
+
+  animation: lineanim 1.5s ease forwards;
+}
+
+#animate path:nth-child(3) {
+  stroke-dasharray: 419px;
+  stroke-dashoffset: 419px;
+
+  animation: lineanim 1.5s ease .3s forwards;
+}
+
+#animate path:nth-child(4) {
+  stroke-dasharray: 219px;
+  stroke-dashoffset: 219px;
+
+  animation: lineanim 1.5s ease .6s forwards;
+}
+
+#animate path:nth-child(5) {
+  stroke-dasharray: 208px;
+  stroke-dashoffset: 208px;
+
+  animation: lineanim 1.5s ease .9s forwards;
+}
+
+#animate path:nth-child(6) {
+  stroke-dasharray: 365px;
+  stroke-dashoffset: 365px;
+
+  animation: lineanim 1.5s ease 1.2s forwards;
+}
+
+#animate path:nth-child(7) {
+  stroke-dasharray: 419px;
+  stroke-dashoffset: 419px;
+
+  animation: lineanim 1.5s ease 1.5s forwards;
+}
+
+#animate path:nth-child(8) {
+  stroke-dasharray: 325px;
+  stroke-dashoffset: 325px;
+
+  animation: lineanim 1.5s ease 1.8s forwards;
+}
+
+#animate path:nth-child(9) {
+  stroke-dasharray: 448px;
+  stroke-dashoffset: 448px;
+
+  animation: lineanim 1.5s ease 2.1s forwards;
+}
+
+#animate path:nth-child(10) {
+  stroke-dasharray: 375px;
+  stroke-dashoffset: 375px;
+
+  animation: lineanim 1.5s ease 2.4s forwards;
+}
+
+#animate path:nth-child(11) {
+  stroke-dasharray: 359px;
+  stroke-dashoffset: 359px;
+
+  animation: lineanim 1.5s ease 2.4s forwards;
+}
+
+#animate path:nth-child(12) {
+  stroke-dasharray: 359px;
+  stroke-dashoffset: 359px;
+
+  animation: lineanim 1.5s ease 2.4s forwards;
+}
+
+#animate path:nth-child(13) {
+  stroke-dasharray: 448px;
+  stroke-dashoffset: 448px;
+
+  animation: lineanim 1.5s ease 2.4s forwards;
+}
+
+#animate path:nth-child(14) {
+  stroke-dasharray: 219px;
+  stroke-dashoffset: 219px;
+
+  animation: lineanim 1.5s ease 2.4s forwards;
+}
+
+#animate path:nth-child(15) {
+  stroke-dasharray: 448px;
+  stroke-dashoffset: 448px;
+
+  animation: lineanim 1.5s ease 2.4s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity:0;
+  }
+  50% {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@keyframes arrow
+{
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
 }

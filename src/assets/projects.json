@@ -1,0 +1,84 @@
+[
+  {
+    "title": "Plumeria Online shop",
+    "content": "Site de e-commerce, shop de bijoux",
+    "link": "https://github.com/kteyssere/SymfonyMyShop"
+
+  },
+  {
+    "title": "Test technique",
+    "content": "Gestion d'un ensemble d'identités de personnes",
+    "link": "https://github.com/kteyssere/test-technique-angular"
+  },
+  {
+    "title": "Lazy Art Museum - front",
+    "content": "Musée fictif avec billetterie pour des expositions",
+    "link": "https://github.com/kteyssere/LazyArtMuseumWUI",
+    "teammate":
+    {
+      "name": "Brandon Reynier",
+      "link": "https://github.com/BradR07"
+    }
+  },
+  {
+    "title": "Lazy Art Museum - back",
+    "content": "Musée fictif avec billetterie pour des expositions",
+    "link": "https://github.com/kteyssere/LazyArtMuseumAPI",
+    "teammate":
+    {
+      "name": "Brandon Reynier",
+      "link": "https://github.com/BradR07"
+    }
+  },
+  {
+    "title": "Lazy Cook",
+    "content": "Reseau social de publication de recettes de cuisine en ligne",
+    "link": "https://github.com/kteyssere/SymfonyProjectLazyCook",
+    "teammate":
+    {
+      "name": "Brandon Reynier",
+      "link": "https://github.com/BradR07"
+    }
+  },
+  {
+    "title": "Lazy Messages - iOS",
+    "content": "Envoi de SMS/mails programmés",
+    "link": "https://github.com/kteyssere/iOSProjectLazyMessages",
+    "teammate":
+    {
+      "name": "Brandon Reynier",
+      "link": "https://github.com/BradR07"
+    },
+    "demoId": "cpRgcusGI48"
+  },
+  {
+    "title": "Tag App",
+    "content": "Gestion des transports en cummuns sur l'aire grenobloise",
+    "link": "https://github.com/kteyssere/ProjetTagIonic",
+    "teammate":
+    {
+      "name": "Brandon Reynier",
+      "link": "https://github.com/BradR07"
+    }
+  },
+  {
+    "title": "Lazy Messages - Android",
+    "content": "Envoi de SMS/mails programmés",
+    "link": "https://github.com/kteyssere/AndroidProjectLazyMessages",
+    "teammate":
+    {
+      "name": "Brandon Reynier",
+      "link": "https://github.com/BradR07"
+    }
+  },
+  {
+    "title": "Calculatrice",
+    "content": "Calculatrice en ligne",
+    "link": "https://github.com/kteyssere/ProjetReactCalculatrice",
+    "teammate":
+    {
+      "name": "Brandon Reynier",
+      "link": "https://github.com/BradR07"
+    }
+  }
+]
