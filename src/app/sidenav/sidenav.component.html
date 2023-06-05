@@ -3,12 +3,6 @@
   <mat-toolbar color="primary" class="toolbar">
     <mat-toolbar-row>
       <button mat-button (click)="snav.toggle()">CV</button>
-
-      <span class="spacer"></span>
-      <button mat-icon-button class="icon" aria-label="icon-button with menu icon" (click)="openDialog('0ms', '0ms')">
-        <mat-icon>menu</mat-icon>
-      </button>
-
     </mat-toolbar-row>
   </mat-toolbar>
 
@@ -16,12 +10,7 @@
                          [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
     <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
                  [fixedInViewport]="mobileQuery.matches" fixedTopGap="56" class="sidenav">
-     <!-- <mat-nav-list>
-
-      </mat-nav-list>-->
-      <div class="avatar-container">
-        <img ngSrc="assets/avatar.JPG" alt="Avatar" class="avatar" height="1142" width="857">
-      </div>
+      <app-cv></app-cv>
     </mat-sidenav>
 
     <mat-sidenav-content>

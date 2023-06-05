@@ -1,7 +1,5 @@
 import { Component, ChangeDetectorRef, OnDestroy } from '@angular/core';
 import {MediaMatcher} from '@angular/cdk/layout';
-import {MatDialog, MatDialogRef} from '@angular/material/dialog';
-import {MenuComponent} from "../menu/menu.component";
 
 @Component({
   selector: 'app-sidenav',
@@ -13,21 +11,10 @@ export class SidenavComponent implements OnDestroy {
 
   private _mobileQueryListener: () => void;
 
-  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, public dialog: MatDialog) {
+  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addEventListener('change', this._mobileQueryListener);
-  }
-
-  openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
-    this.dialog.open(MenuComponent, {
-      //width: '250px'
-      height: 'auto',
-      minWidth: '100%',
-      minHeight: '100vh',
-      enterAnimationDuration,
-      exitAnimationDuration,
-    });
   }
 
   ngOnDestroy(): void {

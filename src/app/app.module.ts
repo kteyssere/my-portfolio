@@ -10,7 +10,6 @@ import {MatButtonModule} from "@angular/material/button";
 import { SidenavComponent } from './sidenav/sidenav.component';
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListModule} from "@angular/material/list";
-import { MenuComponent } from './menu/menu.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import {NgOptimizedImage} from "@angular/common";
 import {MatCardModule} from "@angular/material/card";
@@ -22,17 +21,18 @@ import {MatTooltipModule} from "@angular/material/tooltip";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { ProjectDemoComponent } from './project-demo/project-demo.component';
 import {YouTubePlayerModule} from "@angular/youtube-player";
+import { CvComponent } from './cv/cv.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidenavComponent,
-    MenuComponent,
     HeaderComponent,
     ProjectCardsComponent,
     ContactComponent,
     SkillsComponent,
-    ProjectDemoComponent
+    ProjectDemoComponent,
+    CvComponent
   ],
   imports: [
     BrowserModule,
